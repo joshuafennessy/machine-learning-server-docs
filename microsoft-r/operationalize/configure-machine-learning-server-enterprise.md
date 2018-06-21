@@ -160,6 +160,9 @@ If you are provisioning on a cloud service, then you must also [create inbound s
 
 You can set up the load balancer of your choosing. Keep in mind that web nodes are stateless. Therefore, session persistence ("stickiness") is NOT required. 
 
+>[!IMPORTANT]
+>All web nodes in the load balanced cluster must use either the same JWTKey or the same access token signing certificate specificed in the appsettings.json. [Learn More...](https://docs.microsoft.com/en-us/machine-learning-server/operationalize/how-to-manage-access-tokens)
+
 
 ### 7. Post configuration steps
 
